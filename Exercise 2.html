@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Average of five numbers.</p>
+<script>
+    var arr = [];
+    var sum = 0;
+    for ( var num = 0; num < 5; num ++ ) {
+        arr[num] = prompt("please enter a number");
+        var number = parseInt(arr[num]);
+        sum = sum + number;
+    }
+    var average = sum/5;
+    document.writeln("The average is " + average);
+</script>
+
+
+</body>
+</html>

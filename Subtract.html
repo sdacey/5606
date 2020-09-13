@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Subtracting</title>
+    <script>
+        function subtractNumbers(number1, number2) {
+            var result = number1 - number2;
+            return result;
+        }
+    </script>
+</head>
+<body>
+<form onsubmit ="return false">
+    <script>
+        var number1 = prompt("Please enter your first number", 3);
+        var number2 = prompt("Please enter your second number", 1);
+        if ((number1 != 0) && (number2 != 0)) {
+            var num1 = parseInt(number1);
+            var num2 = parseInt(number2);
+            var result = subtractNumbers(num1, num2);
+            alert("The result is " + result);
+        }
+        else alert("One or both of your numbers is missing");
+    </script>
+    <p> </p>
+</form>
+</body>
+</html>

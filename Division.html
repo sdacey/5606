@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Division</title>
+    <script>
+        function DivideNumbers(number1, number2) {
+            var result = number1 / number2;
+            return result;
+        }
+    </script>
+</head>
+<body>
+<form onsubmit ="return false">
+    <script>
+        var number1 = prompt("Please enter your first number", 9);
+        var number2 = prompt("Please enter your second number", 3);
+        if (number2 != 0) {
+            var result = DivideNumbers(number1, number2);
+            alert("The result is " + result);
+        }
+        else alert("Cannot divide by zero");
+    </script>
+    <p> </p>
+</form>
+</body>
+</html>

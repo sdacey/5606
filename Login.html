@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<body>
+<input id="username" placeholder="Username"><br><br>
+<input id="password" placeholder="Password"><br>
+<input onclick="login()" type="button" value="Submit">
+
+<script>
+    var attempts = 0
+    function login()
+    {
+        var uName = document.getElementById("username").value
+        var uPass = document.getElementById("password").value
+        if (attempts < 3)
+        {
+            if( (uName == "Unitec")    &&    (uPass == "Unitec") )
+            {
+                alert("Well done! Welcome back")
+            }
+            else
+            {
+                alert("Try again")
+                attempts ++
+            }
+        }
+        else
+        {
+            alert("Your account has been locked. The FBI has been notified. They are on their way to your house.")
+        }
+    }
+</script>
+
+</body>
+</html>

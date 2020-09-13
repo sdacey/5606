@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Grading Marks</title>
+    <script>
+        function DivideNumbers(number1, number2) {
+            var result = number1 / number2;
+            return result;
+        }
+    </script>
+</head>
+<body>
+<form onsubmit ="return false">
+    <script>
+        var input = prompt("Please enter your mark", 50);
+        var mark = parseInt(input);
+        var grade = "hello";
+        switch (true) {
+            case ((mark >= 0) && (mark < 40)):  grade = "E - Fail"; break;
+            case ((mark >=40) && (mark < 50)):  grade = "D - Fail"; break;
+            case ((mark >=50) && (mark < 50)):  grade = "C - Pass"; break;
+            case ((mark >=60) && (mark < 50)):  grade = "B - Pass"; break;
+            case ((mark >=80) && (mark < 50)):  grade = "A - Pass"; break;
+        }
+        alert("Your grade is " + grade)
+
+    </script>
+    <p> </p>
+</form>
+</body>
+</html>

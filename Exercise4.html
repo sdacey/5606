@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Lowest of Six Numbers.</p>
+<script>
+    var arr = [];
+    var lowest = 0;
+    for ( var num = 0; num < 6; num ++ ) {
+        var number = prompt("please enter number "+ num,2);
+        arr[num] = parseInt(number);
+    }
+    lowest = arr[0];
+    for (num = 1; num < 6; num++) {
+        if (arr[num] < lowest) {
+            lowest = arr[num];
+        }
+    }
+    alert("The lowest is " + lowest);
+</script>
+</body>
+</html>

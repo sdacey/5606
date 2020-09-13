@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Adding</title>
+    <script>
+        function AddNumbers(number1, number2) {
+            var result = number1 + number2;
+            return result;
+        }
+    </script>
+</head>
+<body>
+<form onsubmit ="return false">
+    <script>
+        var number1 = prompt("Please enter your first number", 3);
+        var number2 = prompt("Please enter your second number", 3);
+        if ((number1 != 0) && (number2 != 0)) {
+            var result = AddNumbers(number1, number2);
+            alert("The sum is " + result);
+        }
+        else alert("One or both of your numbers is missing");
+    </script>
+    <p> </p>
+</form>
+</body>
+</html>

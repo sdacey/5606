@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<body>
+<input type="text" id="textField">
+<input type="button" value="Add new name" onclick="addName()">
+
+<h4>All names:</h4>
+<textarea id="textArea" rows=8></textarea>
+
+<br><br><br>
+<script>
+    var names = ["Adam", "Jeremy", "Penelope"]
+
+    var nameTextField = document.getElementById("textField")
+    var textArea = document.getElementById("textArea")
+
+    writeAllNames()
+    function writeAllNames()
+    {
+        textArea.innerHTML = "" // empty the textarea
+        // loop through EVERY name stored
+        for (var INDEX = 0; INDEX < names.length; INDEX++)
+        {
+            // add EVERY name into the text area
+            // \n means 'ADD NEW LINE' on the end
+            textArea.innerHTML += names[INDEX] + "\n"
+        }
+    }
+
+    function addName()
+    {
+        names.push(nameTextField.value) // add the new name to the array
+        writeAllNames()
+    }
+</script>
+</body>
+</html>

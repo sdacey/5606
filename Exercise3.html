@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Highest of Eight Numbers.</p>
+<script>
+    var arr = [];
+    var highest = 0;
+    for ( var num = 0; num < 8; num ++ ) {
+        var number = prompt("please enter number "+ num,2);
+        arr[num] = parseInt(number);
+    }
+    highest = arr[0];
+    for (num = 1; num < 8; num++) {
+        if (arr[num] > highest) {
+            highest = arr[num];
+        }
+    }
+    alert("The highest is " + highest);
+</script>
+</body>
+</html>
